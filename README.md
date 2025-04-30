@@ -1,7 +1,7 @@
 # Python RTT GUI
 ![RTT GUI](./docs/python_rtt_gui.png)
 
-This project serves as a wrapper for SEGGER Real-Time Transfer (RTT) debug channel, 
+This project serves as a wrapper for SEGGER Real-Time Transfer (RTT) debug channel,
 demonstrating how to replace clunky classical channels like UART with lean and mean SWD, SWO for ARM MCUs
 without the need for any intermediary applications.
 
@@ -20,7 +20,7 @@ The documentation and examples in pylink, SEGGER's Python wrapper, are severely 
 - Python 3.8+ (https://www.python.org/)
 - J-Link software suite installed (https://www.segger.com/downloads/jlink)
 - Required Python packages:
-  - PySimpleGUI
+  - FreeSimpleGUI
   - pylink (Segger's J-Link Python wrapper)
 
 ### Use RTTViewer in Embedded Target
@@ -42,10 +42,10 @@ The documentation and examples in pylink, SEGGER's Python wrapper, are severely 
    ```
 2. Install the required packages:
    ```bash
-   pip install PySimpleGUI pylink
-
-   # or
    pip install -r requirements.txt
+
+   # or explicitly
+   pip install FreeSimpleGUI==5.0.0 pylink
    ```
 3. Ensure that the J-Link drivers are installed and accessible on your system.
 
